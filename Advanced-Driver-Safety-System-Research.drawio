@@ -1,0 +1,367 @@
+<mxfile host="app.diagrams.net" modified="2023-04-08T12:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="yourEtag" version="14.7.7" type="device">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Advanced Driver Safety System Architecture">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" background="#000000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Main Title -->
+        <mxCell id="mainTitle" value="Advanced Driver Safety System: Multi-Module Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="225" y="10" width="720" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Title Blocks -->
+        <mxCell id="title1" value="Module 1: Driver Authentication System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A3300;strokeColor=#82b366;fontSize=14;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="122" y="60" width="250" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="title2" value="Module 2: Driver State Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A3300;strokeColor=#82b366;fontSize=14;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="427" y="60" width="250" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="title3" value="Module 3: Collision Prevention System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A3300;strokeColor=#82b366;fontSize=14;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="732" y="60" width="250" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Face Detection Branch -->
+        <mxCell id="faceDetect" value="YOLO v4 Deep Neural Network for Real-time Face Detection (98.7% accuracy)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="122" y="130" width="250" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="faceAlert" value="Secure Wi-Fi Communication Protocol (AES-256) for Unauthorized Access Alert" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="122" y="220" width="250" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="faceDecision" value="Authentication Decision Logic" style="rhombus;whiteSpace=wrap;html=1;fillColor=#003300;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="172" y="310" width="150" height="150" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="faceEnd" value="End of Authentication Process" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="172" y="500" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Drowsiness Detection Branch -->
+        <mxCell id="drowDetect" value="Computer Vision System: OpenCV with CNN (ResNet-50 architecture)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="427" y="130" width="250" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="drowAnalysis" value="Real-time Eye Aspect Ratio (EAR) and Head Pose Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="427" y="220" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="drowDecision" value="Drowsiness Classification Algorithm" style="rhombus;whiteSpace=wrap;html=1;fillColor=#003300;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="477" y="300" width="150" height="150" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="drowAlert" value="Multi-modal Alert System (Audio, Haptic, Visual)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="427" y="480" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="drowEnd" value="Continue Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="477" y="670" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Object Detection (Parallel Process) -->
+        <mxCell id="objectDetect" value="Parallel Object Detection Process (YOLO v5)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#660000;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="569" y="560" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="objectDecision" value="Critical Object Detection Logic" style="rhombus;whiteSpace=wrap;html=1;fillColor=#003300;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="619" y="630" width="150" height="150" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="objectAlert" value="High-Priority Warning System Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#660000;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="799" y="680" width="230" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Collision Detection Branch -->
+        <mxCell id="collisionRecord" value="Continuous High-Definition Video Recording (60 FPS)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="732" y="130" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collisionDetect" value="Single Shot Detector (SSD) Algorithm with MobileNetV2 Backbone" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="732" y="210" width="250" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collisionCalculation" value="Time-to-Collision (TTC) Calculation with Distance Estimation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="732" y="300" width="250" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collisionDecision" value="Imminent Collision Analysis" style="rhombus;whiteSpace=wrap;html=1;fillColor=#003300;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="782" y="390" width="150" height="150" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collisionStorage" value="Buffered Video Storage System (30-second loop)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="732" y="570" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collisionEnd" value="Continue Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="782" y="650" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections for Face Detection -->
+        <mxCell id="faceConnectA" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="title1" target="faceDetect">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="faceConnectB" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="faceDetect" target="faceAlert">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="faceConnectC" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="faceAlert" target="faceDecision">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="faceConnectD" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="faceDecision" target="faceEnd">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="faceYes" value="Authorized" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="217" y="470" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="faceConnectE" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="faceDecision">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="372" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="faceNo" value="Unauthorized" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="332" y="365" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections for Drowsiness Detection -->
+        <mxCell id="drowConnectA" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="title2" target="drowDetect">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="drowConnectB" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="drowDetect" target="drowAnalysis">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="drowConnectC" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="drowAnalysis" target="drowDecision">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="drowConnectD" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="drowDecision" target="drowAlert">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="drowYes" value="Drowsy State Detected" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="552" y="450" width="140" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="drowConnectE" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="drowDecision">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="677" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="drowNo" value="Alert State" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="637" y="355" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Object Detection (Parallel Process) Connections -->
+        <mxCell id="drowParallelConnect" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF3333;dashed=1;" edge="1" parent="1" source="drowAlert" target="objectDetect">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="552" y="540" />
+              <mxPoint x="694" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="drowEndConnect" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="drowAlert" target="drowEnd">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="552" y="540" />
+              <mxPoint x="552" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="objectConnectA" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF3333;dashed=1;" edge="1" parent="1" source="objectDetect" target="objectDecision">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="objectConnectB" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF3333;dashed=1;" edge="1" parent="1" source="objectDecision" target="objectAlert">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="objectYes" value="Object Detected" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="730" y="680" width="109" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="objectConnectD" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF3333;dashed=1;" edge="1" parent="1" source="objectDecision" target="drowEnd">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="705" />
+              <mxPoint x="580" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="objectNo" value="No Object" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="579" y="670" width="70" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections for Collision Detection -->
+        <mxCell id="collisionConnectA" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="title3" target="collisionRecord">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="collisionConnectB" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="collisionRecord" target="collisionDetect">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="collisionConnectC" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="collisionDetect" target="collisionCalculation">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="collisionConnectD" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="collisionCalculation" target="collisionDecision">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="collisionConnectE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="collisionDecision" target="collisionStorage">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="collisionYes" value="Collision Risk" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="857" y="540" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collisionConnectF" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="collisionDecision">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="982" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="collisionNo" value="No Risk" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="942" y="445" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collisionConnectG" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="collisionStorage" target="collisionEnd">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legendTitle" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="942" y="130" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000066;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1002" y="160" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend1Text" value="Standard Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="160" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#660000;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1002" y="190" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend2Text" value="Parallel Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="190" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend3" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#003300;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1002" y="220" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend3Text" value="Decision Points" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="220" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend4" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1002" y="260" as="sourcePoint" />
+            <mxPoint x="1022" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend4Text" value="Standard Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="250" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend5" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FF3333;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1002" y="290" as="sourcePoint" />
+            <mxPoint x="1022" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend5Text" value="Parallel Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="280" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Labels for Parallel Process -->
+        <mxCell id="parallelLabel" value="Parallel Processing: Enhanced Situational Awareness" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="569" y="530" width="300" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Reference Note -->
+        <mxCell id="referenceNote" value="© Research Implementation Framework: Advanced Driver Safety System - IEEE Standard 2846" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="315" y="780" width="540" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile> 
